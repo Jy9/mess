@@ -1,0 +1,231 @@
+body{
+	background: #515151;
+	color: #fff;
+	width: 6.4rem;
+	position: fixed;
+	overflow: hidden;
+	height: 100%;
+}
+
+.alertview,.newview,.indexview{
+	position: fixed;
+	width: 6.4rem;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: #515151;
+	z-index: 1;
+}
+.indexview{
+	overflow-x: hidden;
+}
+.newview{
+	left: 6.4rem;
+	z-index: 10;
+	transition: all 0.4s;
+}
+.alertview{
+	display: none;
+	box-shadow: 0px 0px 100px 0px #FFF;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 100;
+}
+.alertviewclose{
+	position: absolute;
+	top: 0px;
+	right: 0.4rem;
+	width: 0.6rem;
+	height: 1rem;
+	background: #515151;
+	border-bottom-left-radius: 0.3rem;
+	border-bottom-right-radius: 0.3rem;
+	box-shadow: 0px 0px 5px 0px #000;
+}
+.alertviewclose>img{
+	position: absolute;
+	bottom: 0.2rem;
+	width: 0.5rem;
+	left: 0.05rem;
+}
+@keyframes alertViewShow{
+	0%{
+		transform:translateY(4rem);
+	}
+	100%{
+		transform:translateY(0rem);
+	}
+}
+@keyframes alertViewHide{
+	0%{
+		opacity: 1;
+		width: 6.4rem;
+		height: 100%;
+	}
+	20%{
+		opacity: 1;
+		width: 5.8rem;
+		height: 90%;
+	}
+	100%{
+		opacity: 0;
+		height: 100%;
+		width: 6.4rem;
+	}
+}
+
+
+/*indexView style*/
+footer{
+	width: 6.4rem;
+	height: 0.6rem;
+	background: #4A4A4A;
+	box-shadow: -1px 0px 5px 0px #fff;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	padding: 0px 0.2rem;
+	z-index: 100;
+}
+footer>p{
+	height: 0.6rem;
+	width: 0.6rem;
+	line-height: 0.58rem;
+	text-align: center;
+	margin-right: 0.75rem;
+	position: relative;
+}
+footer>p:last-child{
+	margin-right: 0px;
+}
+footer>p>img{
+	height: 0.4rem;
+	margin: 0.1rem 0px;
+}
+footer>div{
+	width: 0.5rem;
+	height: 0.08rem;
+	background: #fff;
+	border-radius: 0.08rem;
+	position: absolute;
+	bottom: 0.02rem;
+	left: 1.6rem;
+	transition: all 0.4s;
+}
+.contentlist{
+	margin-bottom: 0.6rem;
+	min-height: 100%;
+}
+/*空间页 style*/
+.index_seach{
+	width: 6.4rem;
+	transition: all .4s;
+	padding: 0px 0.2rem;
+	padding-top: 0.2rem;
+	position: relative;
+	z-index: 100;
+}
+.index_seach>.index_seach_input{
+	width: 6rem;
+	height: 0.7rem;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #fff;
+}
+.index_seach>.index_seach_input>div{
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0.2rem;
+	top: 0.15rem;
+	background: url(../img/seach.png);
+	background-position: center;
+	background-size: cover;
+}
+.index_seach>.index_seach_input>input{
+	width: 5.6rem;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0.7rem;
+	padding: 0px 0.2rem;
+	color: #fff;
+}
+.index_seach.active{
+	height: calc(100% + 0.6rem);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #fff;
+	padding: 0px;
+}
+.index_seach.active>.index_seach_input{
+	border-color: #eee;
+	width: 6.4rem;
+}
+.index_seach.active>.index_seach_input>div{
+	background-image: url(../img/seach_active.png);
+}
+.index_seach.active>.index_seach_input>input{
+	color: #999;
+}
+
+.indexlist{
+	margin-top: 0.6rem;
+}
+.indexlist>div{
+	border-bottom: 1px solid #fff;
+	margin-bottom: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+.index .oneimg{
+	width: 6.4rem;
+	margin-bottom: 0.2rem;
+}
+
+/*聊天页 style*/
+.message{
+	height: 100%;
+}
+.message>.messagetitle{
+	height: 0.7rem;
+	border-bottom: 1px solid #fff;
+	line-height: 0.7rem;
+	width: 6.4rem;
+	padding: 0px 0.2rem;
+	position: relative;
+	color: #999;
+}
+.message>.messagetitle>li{
+	margin-right: 0.1rem;
+}
+.message>.messagetitle>li.active{
+	color: #fff;
+}
+.message>.messagetitle>div{
+	position: absolute;
+	right: 0.2rem;
+}
+.message>.messagetitle>div>input{
+	color: #fff;
+	height: 0.7rem;
+	width: 3rem;
+	position: absolute;
+	right: 0.6rem;
+	top: 0px;
+}
+.message>.messagetitle>div>div{
+	width: 0.4rem;
+	height: 0.4rem;
+	margin: 0.15rem;
+	background-image: url(../img/seach.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.message>.swiper-container{
+	min-height: 100%;
+}

@@ -1,0 +1,71 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+	list-style: none;
+	box-sizing: border-box;
+	background: transparent;
+}
+.rt{
+	float: right;
+}
+.lt{
+	float:left;
+}
+.fs18{
+	font-size: 0.18rem;
+}
+.fs24{
+	font-size: 0.24rem;
+}
+
+.confirm{
+	width: 6.4rem;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	background: rgba(255,255,255,0.3);
+	color: #999;
+	z-index: 100;
+	display: none;
+}
+.confirm.active{
+	background: rgba(255,255,255,0.3);
+}
+.confirm>div{
+	width: 5rem;
+	background: #fff;
+	box-shadow: 0px 0px 5px 0px #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+	border-radius: 0.2rem;
+	padding: 0.4rem 0.2rem;
+	transition: all 0.2s;
+	opacity: 0;
+}
+.confirm.active>div{
+	width:4.8rem;
+	opacity:1;
+	padding:0.1rem 0.1rem;
+}
+.confirm>div>div{
+	overflow: hidden;
+}
+.confirm>div>div:first-child{
+	line-height: 0.4rem;
+	border-bottom: 1px solid #EEE;
+	padding: 0.2rem 0.1rem;
+}
+.confirm>div>div>p{
+	width: 50%;
+	line-height: 0.6rem;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.confirm>div>div>p:first-child{
+	border-right: 1px solid #eee;
+}

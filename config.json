@@ -1,0 +1,6 @@
+{
+	"POST":443,
+	"mongoURL":"mongodb://localhost:27017/JiaYue",
+	"mailBoxUser":"15601215226@163.com",
+	"emailPwd":"JY542983"
+}

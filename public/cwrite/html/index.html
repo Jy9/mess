@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>随写</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/swiper.min.js"></script>
+		<script src="../javascript/main.js"></script>
+		<script src="../javascript/index.js"></script>
+	</head>
+	<body class="fs24">
+		<!--背景图-->
+		<!--<img src="../image/background.jpg" id="bgImg" />-->
+		<!--confirm div-->
+		<div class="confirm fs22" id="confirm">
+			<div>
+				<div id="confirmMsg fs24">消息内容</div>
+				<div>
+					<p class="lt" id="confirmError">取消</p>
+					<p class="lt" id="confirmSuccess">确定</p>
+				</div>
+			</div>
+		</div>
+		<!--hint div-->
+		<div class="hint" id="hints">
+			<div id="hint" class="rt" style="display: none;">
+				<img src="../icon/warn.png" class="lt"/>
+				<p class="lt fs22">测试文本</p>
+			</div>
+		</div>
+		
+		<!--footer-->
+		<footer>
+			<div>
+				<div index="1"></div>
+			</div>
+			<ul class="fs24">
+				<li class="rt" index="3">书架</li>
+				<li class="rt" index="2">小说</li>
+				<li class="rt" index="1">短文</li>
+				<li class="lt"><img id="select" src="../icon/meun.png"/></li>
+			</ul>
+		</footer>
+		
+		<!--内容-->
+		<div class="swiper-container content">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="contentlist">
+						<div class="seach">
+							<input id="storySeach" type="text" placeholder="请输入搜索内容"/>
+							<img src="../icon/seach.png"/>
+						</div>
+						<div class="subject">
+							<p class="fs28">热门专题</p>
+							<div class="swiper-pagination-storytype"></div>
+							<div class="swiper-container" id="storyType">
+							  	<div class="swiper-wrapper">
+								    <div class="swiper-slide">
+								    	<ul>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/prog.png"/>
+												<p>程序员</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/journ.png"/>
+												<p>新闻</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+										</ul>
+								    </div>
+								    <div class="swiper-slide">
+								    	<ul>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+										</ul>
+								    </div>
+								    <div class="swiper-slide">
+								    	<ul>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+											<li class="lt">
+												<img src="../icon/live.png"/>
+												<p>历史</p>
+											</li>
+										</ul>
+								    </div>
+							  	</div>
+
+							</div>
+						</div>
+						
+						<div class="story" id="storyTP" style="display: none;">
+							<div class="img"></div>
+							<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+							<p class="des">书籍简绍</p>
+							<div class="author fs20">
+								<p class="lt">作者名字(生活家)</p>
+								<p class="rt">2018/1/8</p>
+							</div>
+						</div>
+						<!--最新发布-->
+						<div class="storycontent">
+							<div>最新发布</div>
+							<div class="story" id="storyTP">
+								<div class="img"></div>
+								<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+								<p class="des">书籍简绍</p>
+								<div class="author fs20">
+									<p class="lt">作者名字(生活家)</p>
+									<p class="rt">2018/1/8</p>
+								</div>
+							</div>
+							<div class="story" id="storyTP">
+								<div class="img"></div>
+								<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+								<p class="des">书籍简绍</p>
+								<div class="author fs20">
+									<p class="lt">作者名字(生活家)</p>
+									<p class="rt">2018/1/8</p>
+								</div>
+							</div>
+							<div class="story" id="storyTP">
+								<div class="img"></div>
+								<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+								<p class="des">书籍简绍</p>
+								<div class="author fs20">
+									<p class="lt">作者名字(生活家)</p>
+									<p class="rt">2018/1/8</p>
+								</div>
+							</div>
+							<div class="story" id="storyTP">
+								<div class="img"></div>
+								<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+								<p class="des">书籍简绍</p>
+								<div class="author fs20">
+									<p class="lt">作者名字(生活家)</p>
+									<p class="rt">2018/1/8</p>
+								</div>
+							</div>
+							<div class="more">显示更多</div>
+						</div>
+						<!--推荐-->
+						<div class="recommend storycontent">
+							<div>推荐</div>
+							<div class="swiper-pagination-recommend"></div>
+							<div class="swiper-container" id="recommend">
+								 <div class="swiper-wrapper">
+								    <div class="swiper-slide">
+								    	<div class="story">
+											<div class="img"></div>
+											<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+											<p class="des">书籍简绍</p>
+											<div class="author fs20">
+												<p class="lt">作者名字(生活家)</p>
+												<p class="rt">2018/1/8</p>
+											</div>
+										</div>	
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="story">
+											<div class="img"></div>
+											<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+											<p class="des">书籍简绍</p>
+											<div class="author fs20">
+												<p class="lt">作者名字(生活家)</p>
+												<p class="rt">2018/1/8</p>
+											</div>
+										</div>	
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="story">
+											<div class="img"></div>
+											<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+											<p class="des">书籍简绍</p>
+											<div class="author fs20">
+												<p class="lt">作者名字(生活家)</p>
+												<p class="rt">2018/1/8</p>
+											</div>
+										</div>	
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="pennerwriterpenman">
+							<div>推荐作者</div>
+							<div class="swiper-container" id="pennerwriterpenman">
+								<div class="swiper-wrapper">
+								    <div class="swiper-slide">
+								    	<div class="img"></div>
+										<div class="name fs28">贾越</div>
+										<div class="num">文章数量：120</div>
+										<button>关注</button>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="img"></div>
+										<div class="name fs28">贾越</div>
+										<div class="num">文章数量：120</div>
+										<button>关注</button>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="img"></div>
+										<div class="name fs28">贾越</div>
+										<div class="num">文章数量：120</div>
+										<button>关注</button>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="img"></div>
+										<div class="name fs28">贾越</div>
+										<div class="num">文章数量：120</div>
+										<button>关注</button>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<!--阅读量排行-->
+						<div class="storycontent">
+							<div>阅读量排行</div>
+							<div class="story" id="storyTP">
+								<div class="img"></div>
+								<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+								<p class="des">书籍简绍</p>
+								<div class="author fs20">
+									<p class="lt">作者名字(生活家)</p>
+									<p class="rt">2018/1/8</p>
+								</div>
+							</div>
+							<div class="story" id="storyTP">
+								<div class="img"></div>
+								<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+								<p class="des">书籍简绍</p>
+								<div class="author fs20">
+									<p class="lt">作者名字(生活家)</p>
+									<p class="rt">2018/1/8</p>
+								</div>
+							</div>
+							<div class="more">显示更多</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="contentlist">
+						<div class="fiction" id="fictionTP">
+							<div class="img"></div>
+							<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+							<p class="des">书籍简绍</p>
+							<div class="author fs20">
+								<p class="lt">作者名字(未完本)</p>
+								<p class="rt">2018/1/8</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="contentlist bookrack">
+						<div>
+							<p>我的书架</p>
+							<ul>
+								<li class="lt">
+									<div class="fiction1" id="fictionTP1">
+										<div class="img"></div>
+										<div class="shadow"></div>
+										<div class="shadow1"></div>
+										<p class="name">盘龙</p>
+									</div>
+								</li>
+								<li class="lt">
+									<div class="fiction1" id="fictionTP1">
+										<div class="img"></div>
+										<div class="shadow"></div>
+										<div class="shadow1"></div>
+										<p class="name">斗破苍穹</p>
+									</div>
+								</li>
+								<li class="lt">
+									<div class="fiction1" id="fictionTP1">
+										<div class="img"></div>
+										<div class="shadow"></div>
+										<div class="shadow1"></div>
+										<p class="name">网游之纵横天下</p>
+									</div>
+								</li>
+								<li class="lt">
+									<div class="fiction1" id="fictionTP1">
+										<div class="img"></div>
+										<div class="shadow"></div>
+										<div class="shadow1"></div>
+										<p class="name">修真界败类</p>
+									</div>
+								</li>
+								<li class="lt">
+									<div class="fiction1" id="fictionTP1">
+										<div class="img"></div>
+										<div class="shadow"></div>
+										<div class="shadow1"></div>
+										<p class="name">武动乾坤</p>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+						<div>
+							<p>最近阅读</p>
+							<ul>
+								<li>
+									<div class="fiction" id="fictionTP">
+										<div class="img"></div>
+										<p class="name fs28">名字 <span class="rt fs20"><span>253</span><img src="../icon/write.png"/></span></p>
+										<p class="des">书籍简绍</p>
+										<div class="author fs20">
+											<p class="lt">作者名字(未完本)</p>
+											<p class="rt">2018/1/8</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--selectContent-->
+		<div id="selectContent">
+			<div>
+				<div></div>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

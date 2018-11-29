@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>阅读</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/pinyin.js"></script>
+		<script src="js/pinyinUtil.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body class="fs24">
+		<!--confirm div-->
+		<div class="confirm fs22" id="confirm">
+			<div>
+				<div id="confirmMsg">消息内容</div>
+				<div>
+					<p class="lt" id="confirmError">取消</p>
+					<p class="lt" id="confirmSuccess">确定</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="alertView" class="alertview">
+			<div id="alertViewClose" class="alertviewclose">
+				<img src="img/close.png"/>
+			</div>
+			<!-- 弹框 聊天界面/登陆/设置用户信息-->
+			<div id="alertViewContent" class="alertviewcontent"></div>
+		</div>
+		
+		<!--新建页面-->
+		<div id="newView" class="newview"></div>
+		
+		<div class="indexview" id="indexView">
+			<footer>
+				<div></div>
+				<p class="lt" tabindex=0 ><img src="img/logo.png"/></p>
+				<p class="lt" tabindex=1 >空间</p>
+				<p class="lt" tabindex=2 >关注</p>
+				<p class="lt" tabindex=3 >消息</p>
+				<p class="lt" tabindex=4 >我的</p>
+			</footer>
+			<div class="swiper-container content" id="index">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="contentlist applist">
+							应用列表
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="contentlist index">
+							<div class="index_seach" id="indexSeach">
+								<div class="index_seach_input">
+									<div></div>
+									<input type="text" id="indexSeachInput" placeholder="请输入搜索关键词"/>
+								</div>
+							</div>
+							<div class="indexlist">
+								<div>
+									<img class="img oneimg" src="img/IMAGES_cun_small_5.jpg"/>
+									<p>哦卡萨丁阿斯顿阿斯顿</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div>
+									<p>纯文字</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div>
+									<p>缩略图</p>
+									<p>缩略图</p>
+									<p>缩略图</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div class="dd">
+									<p>视频 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div class="ss">
+									<p>录音 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								
+								<div>
+									<p>录音 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div>
+									<p>录音 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div>
+									<p>录音 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div>
+									<p>录音 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div>
+									<p>录音 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+								<div>
+									<p>录音 一次只能发一个</p>
+									<p>文字 可以没有</p>
+									<ul class="fs18">
+										<li>喜欢</li>
+										<li>收藏</li>
+										<li>评论</li>
+										<li>转发</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="contentlist">
+							<p>说说</p>
+							<div>
+								<p>图片</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>纯文字</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>缩略图</p>
+								<p>缩略图</p>
+								<p>缩略图</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>视频 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div class="ss">
+								<p>录音 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							
+							<div>
+								<p>录音 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>录音 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>录音 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>录音 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>录音 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+							<div>
+								<p>录音 一次只能发一个</p>
+								<p>文字 可以没有</p>
+								<ul class="fs18">
+									<li>喜欢</li>
+									<li>收藏</li>
+									<li>评论</li>
+									<li>转发</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="contentlist message">
+							<ul class="messagetitle" id="messageTitle">
+								<li class="lt active" tabindex=0 >消息</li>
+								<li class="lt" tabindex=1 >好友</li>
+								<li class="lt" tabindex=2 >群组</li>
+								<div>
+									<input type="text" id="" placeholder="输入用户名称" />
+									<div></div>
+								</div>
+							</ul>
+							
+							<div class="swiper-container" id="messageSwiper">
+								<div class="swiper-wrapper">
+								    <div class="swiper-slide">
+								    	<div>
+								    		<p>消息</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div>
+								    		<p>好友</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div>
+								    		<p>群组</p>
+								    	</div>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="contentlist">
+							<p>头像</p>
+							<p>性别</p>
+							<p>昵称</p>
+							<p>个人信息背景</p>
+							<p>编辑个人信息</p>
+							<p>二维码</p>
+							
+							<p>钱包</p>
+							<p>我的收藏</p>
+							<p>实名认证</p>
+							<p>我关注的人</p>
+							<p>退出登陆</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

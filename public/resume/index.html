@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<script src="js/jquery.min.js"></script>
+		<script src="../js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<script src="js/index.js"></script>
+	</head>
+
+	<body>
+		<div class="container" id="app" style="color: #999;">
+			<div class="row">
+				<div class="col-12">
+					<p v-for="info in infos">{{info}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-5">
+					<div v-for="education in educations">
+						<h6 v-if="education.type==='title'">{{education.msg}}</h6>
+						<p v-else>{{education.msg}}</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-7">
+					<h6>技能</h6>
+					<p v-for="skill in skills">{{skill}}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4" v-for="app in applist" style="margin:10px 0px 10px 0px">
+					<div class="card">
+						<img class="card-img-top" v-bind:src="app.img" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">{{app.name}}</h5>
+							<p class="card-text">{{app.msg}}</p>
+							<a v-bind:href="app.git" class="card-link">查看git</a>
+    						<a v-bind:href="app.gourl" class="card-link">进入{{app.name}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,421 @@
+body{
+	height: 100%;
+	width: 6.4rem;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+body>#bgImg{
+	width: 8rem;
+	height: 120%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	transition: all 0.4s;
+}
+
+.swiper-container{
+	height: 100%;
+}
+.contentlist{
+	overflow: scroll;
+	height: 100%;
+	padding-bottom: 0.6rem;
+}
+
+footer{
+	width: 6.4rem;
+	height:0.6rem;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: 100;
+	text-align: center;
+}
+footer>ul{
+	line-height: 0.6rem;
+	padding: 0px 0.2rem;
+}
+footer>ul>li{
+	width: 0.8rem;
+	height: 0.4rem;
+	border-radius: 0.1rem;
+}
+footer>ul>li[index='1']{
+	color: #F388A0;
+}
+footer>ul>li[index='2']{
+	color: #B4E3F2;
+}
+footer>ul>li[index='3']{
+	color: #FBE495;
+}
+footer>div{
+	width: 6.4rem;
+	height: 0.1rem;
+	position: absolute;
+	top: 0px;
+}
+footer>div>div{
+	width: 0.5rem;
+	height: 0.1rem;
+	border-radius: 0.1rem;
+	position: absolute;
+	transition: all 0.4s;
+}
+footer>div>div[index='1']{
+	right: 1.95rem;
+	background: #F388A0;
+}
+footer>div>div[index='2']{
+	right: 1.15rem;
+	background: #B4E3F2;
+}
+footer>div>div[index='3']{
+	right: 0.35rem;
+	background: #FBE495;
+}
+#select{
+	height: 0.4rem;
+	margin-top: 0.1rem;
+}
+
+#selectContent{
+	width: 6.4rem;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0,0.3);
+	z-index: 1000;
+	display: none;
+}
+#selectContent>div{
+	width: 5rem;
+	position: absolute;
+	left: -5rem;
+	height: 100%;
+	top:0px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.6);
+	transition: all 0.4s;
+}
+
+.seach{
+	width: 6.4rem;
+	height: 0.8rem;
+	background: #fff;
+	transition: all 0.3s;
+	position: relative;
+	z-index: 11;
+	border-bottom: 1px solid #eee;
+}
+.seach>input{
+	width: 6rem;
+	height: 0.6rem;
+	margin-left:0.2rem;
+	margin-top:0.1rem;
+	background: rgba(0,0,0,0.1);
+	border-radius: 0.1rem;
+	padding: 0px 0.2rem;
+}
+.seach>img{
+	width: 0.4rem;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.4rem;
+}
+
+.subject{
+	width: 6.4rem;
+	height: 2.2rem;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid #eee;
+	padding: 0.2rem;
+	padding-top: 0.2rem;
+}
+.subject .swiper-pagination-storytype{
+	position: absolute;
+	top: 0.2rem;
+	padding-left: 0.6rem;
+}
+.subject .swiper-pagination-bullet{
+	margin-left: 0.1rem;
+}
+.subject>p{
+	color: #666;
+	text-align: right;
+}
+.subject .swiper-container{
+	width: 6rem;
+}
+.subject ul{
+	overflow: hidden;
+	width: 6rem;
+	margin-top: 0.2rem;
+}
+.subject ul>li{
+	width: 1.5rem;
+	text-align: center;
+	color: #999;
+}
+.subject ul>li>img{
+	width: 1.5rem;
+	padding: 0px 0.3rem;
+}
+
+.fiction{
+	width: 6.4rem;
+	height: 2.6rem;
+	border-bottom: 1px solid #eee;
+	padding-top: 0.3rem;
+	position: relative;
+}
+.fiction>.img{
+	width: 1.6rem;
+	height: 2rem;
+	background-image: url(../image/DSCN0614_small.jpg);
+	background-position: center;
+	background-size: cover;
+	margin-left: 0.2rem;
+	border-radius: 0.1rem;
+	box-shadow: 1px 1px 0.1rem 0px rgba(0,0,0,0.2);
+}
+.fiction>.name,.fiction>.author,.fiction>.des{
+	position:absolute;
+	left:2rem;
+}
+.fiction>.name{
+	top: 0.3rem;
+	line-height: 0.5rem;
+	color: #666;
+	font-weight: 900;
+	width: 4.2rem;
+}
+.fiction>.name>span{
+	font-weight: 400;
+	color: #999;
+	position: relative;
+}
+.fiction>.name>span>img{
+	position: absolute;
+	left: -0.4rem;
+	top: 0.1rem;
+	width: 0.3rem;
+}
+.fiction>.author{
+	width: 4.2rem;
+	line-height: 0.3rem;
+	color: #999;
+	font-weight: 400;
+	top: 2rem;
+}
+.fiction>.des{
+	top: 0.8rem;
+	color: #999;
+}
+
+.fiction1{
+	width: 2rem;
+	height: 3rem;
+	padding-top: 0.2rem;
+	margin-left: 0.1rem;
+	position: relative;
+}
+.fiction1>.img{
+	width: 1.8rem;
+	height: 2.2rem;
+	margin-left: 0.1rem;
+	position: relative;
+	padding-top: 0.1rem;
+	padding-left: 0.2rem;
+	background-image: url(../image/DSCN0614_small.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 0.1rem;
+	z-index: 1;
+    box-shadow: 1px 1px 0.1rem 0px rgba(0,0,0,0.3);
+}
+
+.fiction1>.shadow,.fiction1>.shadow1{
+	width: 1.8rem;
+    height: 2.24rem;
+    position: absolute;
+    top: 0.26rem;
+    left: 0.14rem;
+    border-radius: 0.1rem;
+    border-bottom-left-radius: 0.14rem;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 0.1rem 0px rgba(0,0,0,0.2);
+}
+.fiction1>.shadow1{
+	top: 0.22rem;
+	left: 0.13rem;
+}
+.fiction1>.name{
+	width: 2rem;
+	line-height: 0.4rem;
+	margin-top: 0.2rem;
+	text-align: center;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	color: #999;
+}
+
+.story{
+	width: 6.4rem;
+	height: 2rem;
+	border-bottom: 1px solid #eee;
+	padding-top: 0.2rem;
+	position: relative;
+}
+.story>.name,.story>.author,.story>.des,.story>.img{
+	position:absolute;
+	left:0.2rem;
+}
+.story>.img{
+	left: 4.6rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	background-image: url(../image/DSCN0614_small.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 0.1rem;
+	box-shadow: -1px -1px 0.1rem 0px rgba(0,0,0,0.2);
+}
+.story>.name{
+	top: 0.2rem;
+	line-height: 0.5rem;
+	color: #666;
+	font-weight: 900;
+	width: 4.2rem;
+}
+.story>.name>span{
+	font-weight: 400;
+	color: #999;
+	position: relative;
+}
+.story>.name>span>img{
+	position: absolute;
+	left: -0.4rem;
+	top: 0.1rem;
+	width: 0.3rem;
+}
+.story>.author{
+	width: 4.2rem;
+	line-height: 0.3rem;
+	color: #999;
+	font-weight: 400;
+	top: 1.5rem;
+}
+.story>.des{
+	top: 0.8rem;
+	color: #999;
+}
+
+.recommend{
+	position: relative;
+}
+.recommend .swiper-pagination-recommend{
+	position: absolute;
+	top: 0.1rem;
+    right: 0.2rem;
+}
+.recommend .swiper-pagination-bullet{
+	margin-right: 0.1rem;
+}
+.storycontent{
+	background: #fff;
+}
+.storycontent>div:first-child{
+	background: #eee;
+	color: #999;
+	padding-left: 0.4rem;
+	line-height: 0.5rem;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	border-top: 0.2rem solid #eee;
+}
+.more{
+	line-height: 0.8rem;
+	text-align: center;
+	color: #999;
+}
+
+.pennerwriterpenman{
+	color: #999;
+	width: 6.4rem;
+	height: 3.3rem;
+	padding-top: 0.2rem;
+	overflow: hidden;
+	background: #eee;
+}
+.pennerwriterpenman>div:first-child{
+	line-height: 0.5rem;
+	padding-left: 0.4rem;
+}
+.pennerwriterpenman>div:last-child{
+	padding: 0px 0.2rem;
+}
+.pennerwriterpenman .swiper-slide{
+	height: 2.6rem;
+	background: #fff;
+	position: relative;
+	text-align: center;
+	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.2);
+}
+.pennerwriterpenman .swiper-slide>div,.pennerwriterpenman .swiper-slide>p,.pennerwriterpenman .swiper-slide>button{
+	position: absolute;
+	top: 0.3rem;
+}
+.pennerwriterpenman .swiper-slide .img{
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 0.1rem;
+	background-image: url(../image/DSCN0614_small.jpg);
+	background-position: center;
+	background-size: cover;
+	position:absolute;
+	left: 0.2rem;
+}
+.pennerwriterpenman .swiper-slide .name{
+	color: #666;
+	top: 0.4rem;
+	left: 1.6rem;
+}
+.pennerwriterpenman .swiper-slide .num{
+	top: 1rem;
+	left: 1.6rem;
+}
+.pennerwriterpenman .swiper-slide button{
+	width: 90%;
+	height: 0.6rem;
+	background: #09BB07;
+	color: #fff;
+	border-radius: 0.1rem;
+	top: auto;
+	bottom: 0.2rem;
+	left: 0.2rem;
+}
+
+.bookrack>div{
+	background: #FFFFFF;
+	border-top: 0.2rem solid #eee;
+}
+.bookrack>div:first-child{
+	border: none;
+	padding-bottom:0.2rem;
+}
+.bookrack>div>p{
+	line-height: 0.5rem;
+	color: #999;
+	border-bottom: 1px solid #eee;
+	padding-left: 0.4rem;
+}
+.bookrack>div>ul{
+	overflow: hidden;
+}
